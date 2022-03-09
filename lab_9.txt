@@ -16,4 +16,12 @@ Basic Authentication is not secure since it passes the user ID and password over
 the network as Base64 encoded that can be reversible. Token Authentication does
 not do this.
 
+Question 4:
+Used in case a third party application requires access to an HTTP service on behalf of 
+a user. The user visits a third party app and clicks an option to log in to 
+an external account such as google. The user is then redirected to a Google app
+where they enter their credentials. Once logged in, the user is redirected back
+to the third party app and this third party app now has limited access to the 
+user's data they need (such as their contact list).
+
 
