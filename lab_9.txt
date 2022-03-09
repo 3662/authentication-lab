@@ -1,0 +1,19 @@
+Question 1:
+It uses HTTP Basic Authentication and is signe against a sername and password.
+When authenticated, BasicAuthentication provides the credentials request.user
+(a Django user instance) and request.auth (set to None).
+Denied permissions will result in a HTTP 401 Unauthorized response.
+
+Question 2:
+It uses HTTP Basic Authentication
+
+Question 3:
+Session Authentication is appropriate for AJAX clients that run in the same 
+session context as the website. Token Authentication is appropriate for 
+client-server set ups.
+
+Basic Authentication is not secure since it passes the user ID and password over 
+the network as Base64 encoded that can be reversible. Token Authentication does
+not do this.
+
+
